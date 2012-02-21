@@ -20,8 +20,6 @@ if args:
 		outfile = args[1]
 		plisttype = args[2]
 	
-	# Check outfile is writable
-	#os.access('/path/to/folder', os.W_OK)
 	if(open(os.path.abspath(outfile),'w')):
 		if(os.path.isfile(infile)):
 			data = csv.reader(open(infile))
