@@ -1,0 +1,18 @@
+csv2plist.py
+
+Creates a plist array from a list of records in a CSV (using the first column only). Will soon allow for creating of dictionaries - but that's not implemented yet.
+
+Usage
+Usage is simple, just invoke from the command line:
+
+python csv2plist.py csvfile [output plist file] [type]
+
+output plist file is optional, if unused it'll create a plist in the same directory as the CSV
+type is going to be used for 'array' or 'dict'. At the moment it always defaults to 'array' so you can completely ignore this parameter.
+
+Examples
+python csv2plist.py mycsv.csv
+outputs: mycsv.plist in the same directory as mycsv.csv
+
+python csv2plist.py mycsv.csv myplist.plist
+outputs: myplist.plist in the same directory as mycsv.csv
