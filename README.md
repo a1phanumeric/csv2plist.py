@@ -11,8 +11,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-csv2plist
-==========
+csv2plist.py
+============
 
 #### ABOUT
 Creates a plist array from a list of records in a CSV (using the first column only). Will soon allow for creating of dictionaries - but that's not implemented yet.
@@ -26,7 +26,7 @@ Usage is simple, just invoke from the command line:
 output plist file is optional, if unused it'll create a plist in the same directory as the CSV
 type is going to be used for 'array' or 'dict'. At the moment it always defaults to 'array' so you can completely ignore this parameter.
 
-#### EXMAPLES
+#### EXAMPLES
 
 ``python csv2plist.py mycsv.csv``
 outputs: mycsv.plist in the same directory as mycsv.csv
