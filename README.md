@@ -15,7 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ### ABOUT
-Creates a plist array from a list of records in a CSV (using the first column only). Will soon allow for creating of dictionaries - but that's not implemented yet.
+Creates a plist array from a list of records in a CSV OR a plist dictionary from a multi-column CSV
 
 ### USAGE
 
@@ -24,7 +24,9 @@ Usage is simple, just invoke from the command line:
 ``python csv2plist.py csvfile [output plist file] [type]``
 
 output plist file is optional, if unused it'll create a plist in the same directory as the CSV
-type is going to be used for 'array' or 'dict'. At the moment it always defaults to 'array' so you can completely ignore this parameter.
+type can be 'array' or 'dict' (default is 'array').
+
+If you're creating a dictionary, the first row in the CSV will be used as the keys.
 
 ### EXAMPLES
 
