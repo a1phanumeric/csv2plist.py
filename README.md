@@ -36,3 +36,6 @@ outputs: mycsv.plist in the same directory as mycsv.csv
 ``python csv2plist.py mycsv.csv myplist.plist``
 outputs: myplist.plist in the same directory as mycsv.csv
 
+``python csv2plist.py mycsv.csv myplist.plist dict``
+outputs: myplist.plist in the same directory as mycsv.csv but this time creates a dictionary.
+
