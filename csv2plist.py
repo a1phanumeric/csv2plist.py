@@ -14,12 +14,17 @@ if args:
 	
 	if(len(args) == 2):
 		infile = args[0]
-		outfile = infile.replace(".csv", ".plist")
-		plisttype = 'array'
+        arg2 = args[1]
+        plisttype = 'array'
+        if(arg2 == 'dict')
+            plisttype = 'dict'
+            outfile = infile.replace(".csv", ".plist")
+        else
+            outfile = args[1]
 	
 	if(len(args) == 3):
 		infile = args[0]
-		outfile = infile.replace(".csv", ".plist")
+		outfile = args[1]
 		plisttype = args[2]
 	
 	if(open(os.path.abspath(outfile),'w')):
